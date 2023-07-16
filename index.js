@@ -11,6 +11,7 @@ renderDog();
 heartBtn.addEventListener("click", () => {
   dog.hasBeenLiked = true;
   xBtn.disabled = true;
+  heartBtn.disabled = true;
   likedDogsArray.push(dog);
   renderDog();
   document.getElementById("badge").style.display = "block";
@@ -19,6 +20,7 @@ heartBtn.addEventListener("click", () => {
 
 xBtn.addEventListener("click", () => {
   heartBtn.disabled = true;
+  xBtn.disabled = true;
   renderDog();
   document.getElementById("badge").style.display = "block";
   continueSearch();
