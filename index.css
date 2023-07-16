@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(212, 204, 204);
+  font-family: "Poppins", sans-serif;
+  color: #f8f8f8;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+p {
+  color: #b7b7b7;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.general-container {
+  width: 34.375rem;
+  background: linear-gradient(180deg, #fff 0%, #f7f8fc 100%);
+  margin: 2rem auto;
+}
+
+/* HEADER */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+.icon-header {
+  height: 2.5rem;
+}
+
+/* DOG CARD */
+.dog-card {
+  position: relative;
+}
+
+.dog-img {
+  width: 97%;
+  display: block;
+  margin: 0 auto;
+  height: 46.96rem;
+  border-radius: 0.937rem;
+}
+
+.dog-description {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+}
+
+.badge {
+  width: 14.62rem;
+  position: absolute;
+  top: 55px;
+  left: 25px;
+  rotate: -30deg;
+}
+
+.like {
+  display: none;
+}
+.nope {
+  display: none;
+}
+
+/* BOTTOM ICONS */
+.icon-bottom-container {
+  padding: 1.7em 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+button {
+  display: flex;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  border-radius: 50%;
+  background-color: #fff;
+  filter: drop-shadow(0px 10px 20px #edd9df);
+  line-height: 1;
+  position: relative;
+  box-shadow: 0px 10px 20px #e9e9ea;
+  border: none;
+}
+
+.icon-bottom {
+  width: 2.1rem;
+}
+
+.heart-btn:hover {
+  background-color: #dbfff4;
+}
+
+.x-btn:hover {
+  background-color: #ffe7ef;
+}
+.black {
+  color: black;
+}
+
+.end-message {
+  text-align: center;
+  padding: 2em;
+  color: black;
+}
