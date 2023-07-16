@@ -11,14 +11,16 @@ renderDog();
 heartBtn.addEventListener("click", () => {
   dog.hasBeenLiked = true;
   xBtn.disabled = true;
-  document.getElementById("badge-like").style.display = "block";
   likedDogsArray.push(dog);
+  renderDog();
+  document.getElementById("badge").style.display = "block";
   continueSearch();
 });
 
 xBtn.addEventListener("click", () => {
   heartBtn.disabled = true;
-  document.getElementById("badge-nope").style.display = "block";
+  renderDog();
+  document.getElementById("badge").style.display = "block";
   continueSearch();
 });
 

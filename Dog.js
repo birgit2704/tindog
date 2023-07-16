@@ -4,7 +4,7 @@ class Dog {
   }
 
   renderDogHtml() {
-    const { name, avatar, age, bio } = this;
+    const { name, avatar, age, bio, hasBeenLiked } = this;
 
     return `
         <img class="dog-img" src="${avatar}" />
@@ -12,8 +12,9 @@ class Dog {
             <h2>${name}, ${age}</h2>
             <p>${bio}</p>
           </div>
-          <img class="badge like" id="badge-like" src="images/badge-like.png" />
-          <img class="badge nope" id="badge-nope" src="images/badge-nope.png" />
+          <img class="badge" id="badge" src=${
+            hasBeenLiked ? "images/badge-like.png" : "images/badge-nope.png"
+          } />
           `;
   }
 }
