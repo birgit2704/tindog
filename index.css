@@ -41,6 +41,10 @@ nav {
   height: 2.5rem;
 }
 
+#logo {
+  cursor: pointer;
+}
+
 /* DOG CARD */
 .dog-card {
   position: relative;

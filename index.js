@@ -26,6 +26,10 @@ xBtn.addEventListener("click", () => {
   continueSearch();
 });
 
+document.getElementById("logo").addEventListener("click", () => {
+  window.location.reload();
+});
+
 function renderDog() {
   document.getElementById("dog-card").innerHTML = dog.renderDogHtml();
 }
